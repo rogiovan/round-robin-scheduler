@@ -11,7 +11,6 @@ MKDIR=mkdir -p
 all: $(BIN_DIR)/$(EXEC)
 
 $(BUILD_DIR)/%.o : $(SRC_DIR)/%.c
-	echo $(OBJS)
 	$(MKDIR) $(BUILD_DIR)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
